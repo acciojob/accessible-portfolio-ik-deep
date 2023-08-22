@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Accessible Web Page</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <header role="banner">
+        <h1 role="heading" aria-level="1">Welcome to Our Website</h1>
+        <nav role="navigation">
+            <ul role="list">
+                <li role="listitem"><a href="#">Home</a></li>
+                <li role="listitem"><a href="#">About Us</a></li>
+                <li role="listitem"><a href="#">Services</a></li>
+                <li role="listitem"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main role="main">
+        <section role="region">
+            <h2 role="heading" aria-level="2">Featured Product</h2>
+            <img src="product.jpg" alt="Product Image" role="img">
+            <p>Check out our amazing new product that will revolutionize your life.</p>
+        </section>
+        
+        <section role="region">
+            <h2 role="heading" aria-level="2">Popular Items</h2>
+            <ul role="list">
+                <li role="listitem">Item 1</li>
+                <li role="listitem">Item 2</li>
+                <li role="listitem">Item 3</li>
+            </ul>
+        </section>
+    </main>
 </body>
-
 </html>
